@@ -37,4 +37,10 @@ function showData(){
     listContainer.innerHTML = localStorage.getItem("data")
 }
 
+inputBox.addEventListener('keyDown', (event) => {
+    if (event.key === 'Enter'){
+        addTask()
+    }
+} ) 
+
 showData()
