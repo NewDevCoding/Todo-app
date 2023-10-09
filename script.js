@@ -37,10 +37,10 @@ function showData(){
     listContainer.innerHTML = localStorage.getItem("data")
 }
 
-inputBox.addEventListener('keyDown', (event) => {
+inputBox.addEventListener('keydown', (event) => {
     if (event.key === 'Enter'){
         addTask()
-    }
-} ) 
+    };
+}) 
 
 showData()
